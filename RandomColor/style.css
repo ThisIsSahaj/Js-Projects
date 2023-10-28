@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Light Green: #90ee90
+Lime Green: #32cd32
+Mint Green: #98ff98
+Forest Green: #228b22
+Olive Green: #556b2f 
+Green: #50C878*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 30rem;
+    /* height: 8rem; */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.secondary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    font-size: 24px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(35, 35, 35);
+}
+
+.footer{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+.alert{
+    background: white;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    border-radius: 4px;
+    border-left:8px solid #1ea966;
+}
+
+.alert.show{
+    animation: show_slide 1s ease forwards;
+}
+@keyframes show_slide {
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+
+.alert.hide{
+    animation: hide_slide 1s ease forwards;
+}
+@keyframes hide_slide {
+    0%{
+        transform: translateX(-10px);
+    }
+    40%{
+        transform: translateX(0%);
+    }
+    80%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.alert .fa-check-circle{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1ea966;
+    font-size: 25px;
+}
+.alert .msg{
+    padding: 0 20px;
+    font-size: 18px;
+    color: #1ea966;
+}
+.alert .close-btn{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    height: 100%;
+    transform: translateY(-50%);
+    background: #1ea966;
+    padding: 20px 18px;
+    cursor: pointer;
+}
+.close-btn:hover {
+    background: #146c41;
+}
+
+.close-btn .fa-times{
+    color: white;
+}
