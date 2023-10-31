@@ -40,5 +40,50 @@ const text = [
     `He couldn't move. His head throbbed and spun. He couldn't decide if it was the flu or the drinking last night. It was probably a combination of both.`,
 ];
 
+// function to shuffle array 
+function shuffle(array) {
+    let currentIndex = array.length,
+        randomIndex;
 
-console.log(text);
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+
+        // Pick a remaining element.
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]
+        ];
+    }
+
+    return array;
+}
+
+
+const item = document.querySelector("#item")
+const dataContainer = document.querySelector("#data")
+
+const generate = () => {
+     
+    if(isNaN(item.value) || item.value<=0 || item.value > 20) {
+        
+        const randomIndex = Math.floor(Math.random() * text.length)
+        dataContainer.innerHTML = `<p>${text[randomIndex]}</p>`
+    }
+    else{
+        const randomText = shuffle(text); //passing the array through shuffle function and storing in a new array
+
+        const data = randomText.slice(0, item.value)  //it slices the array from 0 to 1 less than the entered value
+        // console.log(data);
+        const paras = data.map(
+            (d) => {
+                return `<p>${d}</p> <br>`
+            }
+            )
+        dataContainer.innerHTML = paras.join("");
+    }
+
+
+}

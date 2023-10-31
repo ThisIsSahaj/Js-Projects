@@ -66,3 +66,9 @@
     font-size: 16px;
     text-align: justify;
 }
+
+#data{
+    width: 50%;
+    font-size: 18px;
+    margin: 20px 0px;
+}
