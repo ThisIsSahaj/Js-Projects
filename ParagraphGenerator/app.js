@@ -68,9 +68,9 @@ const dataContainer = document.querySelector("#data")
 const generate = () => {
      
     if(isNaN(item.value) || item.value<=0 || item.value > 20) {
-        
-        const randomIndex = Math.floor(Math.random() * text.length)
-        dataContainer.innerHTML = `<p>${text[randomIndex]}</p>`
+        alert("Please enter a number from 1 to 20");
+        // const randomIndex = Math.floor(Math.random() * text.length)
+        // dataContainer.innerHTML = `<p>${text[randomIndex]}</p>`
     }
     else{
         const randomText = shuffle(text); //passing the array through shuffle function and storing in a new array
