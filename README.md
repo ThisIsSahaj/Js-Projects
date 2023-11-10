@@ -1,3 +1,10 @@
-# Js-Projects
+<h3 align="center">Js-Projects</h3>
 
-# all the projects are live at https://thisissahaj.github.io/Js-Projects/
+  <p align="center">
+    Awesome Java Script Projects To Jumpstart Your JS Journey!
+    <br/>
+    <br/>
+    <a href="https://thisissahaj.github.io/Js-Projects"><strong>View Live Projects »</strong></a>
+    <br/>
+    <br/>
+  </p>
