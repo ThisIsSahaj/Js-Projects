@@ -3,7 +3,7 @@ const getColor = () => {
     const randomNumber = Math.floor(Math.random() * 16777215);
     // const randomNumber = Math.floor(Math.random() * 10000000);
     console.log(randomNumber);
-    const randomCode = "#" + randomNumber.toString(16);
+    const randomCode = "#" + randomNumber.toString(10);
     console.log(randomCode);
     document.body.style.backgroundColor = randomCode;
 

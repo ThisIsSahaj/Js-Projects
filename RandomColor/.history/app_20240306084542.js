@@ -17,9 +17,27 @@ const getColor = () => {
         navigator.clipboard.writeText(randomCode);
         console.log('copied');
         alert('Copied to Clipboard');
+        // $('.alert').removeClass("hide");
+        // $('.alert').addClass("show");
+        // setTimeout(function(){
+        //     $('.alert').addClass("hide");
+        //     $('.alert').removeClass("show");
+        // },3000);
+
+        // .then(() => {
+        //     window.alert("Copied to Clipboard!");
+        // })
+        // .catch((error) => {
+        //     console.error("Sorry, Unable to copy to clipboard: " + error);
+        // });
        
     });
-   
+    // const closeButton = document.getElementById("close");
+
+    // closeButton.addEventListener("click", () => {
+    //     $('.alert').addClass("hide");
+    //     $('.alert').removeClass("show");
+    // });
 };
 
 
