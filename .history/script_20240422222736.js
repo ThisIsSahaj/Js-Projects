@@ -39,7 +39,7 @@ const cards = [
         title: 'QR Code Generator',
         description: 'Generate a QR Code for a Text or URL',
         projLink: 'QRcodeGen/index.html',
-        codeLink: 'https://github.com/ThisIsSahaj/Js-Projects/tree/main/QRcodeGen',
+        codeLink: 'https://github.com/ThisIsSahaj/Js-Projects/tree/main/ToDoList',
     },
     
 ]
