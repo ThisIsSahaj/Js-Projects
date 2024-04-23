@@ -7,18 +7,13 @@
     <title>QR Code Generator</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
     <div class="container">
-        <div class="header" style="display: flex; justify-content: space-between;">
-            <p>ENTER A TEXT OR URL</p>
-            <div style="display: flex; gap: 8px;">
-                <span style=" background-color: #FFC700; border: 2px solid black;"></span>
-                <span style=" background-color: #EF4F1E; border: 2px solid black;" ></span> 
-            </div>
-
-        </div>
+        <p>ENTER A TEXT OR URL</p>
+        <i class="fa-solid fa-bars"></i>
         <input type="text" placeholder="Text or URL" id="input">
         <div id="qrBox">
             <img src="" id="qrImg">

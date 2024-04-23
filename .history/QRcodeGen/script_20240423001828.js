@@ -20,13 +20,13 @@ const generate = () => {
     }
 }
 
-// input.addEventListener('keyup', (event)=>{
+input.addEventListener('keyup', (event)=>{
 
-//     if(event.key == 'Enter')
-//     {
-//         generate();
-//     }
-// })
+    if(event.key == 'Enter')
+    {
+        generate();
+    }
+})
 
 document.body.addEventListener('keyup', (event)=>{
 
