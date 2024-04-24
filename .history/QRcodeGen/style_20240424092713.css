@@ -1,0 +1,119 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'whyte', Arial, Helvetica, sans-serif;
+}
+
+html{
+    cursor: url('/assets/images/PointerBody.png'), auto;
+}
+
+
+body{
+    background: #FF8477;
+}
+
+img, button {
+    /* cursor: url('/assets/images/PointerHover.png'), auto; */
+    cursor: url('/assets/images/PointerHover2.png'), auto;
+}
+
+input, p {
+    cursor: url('/assets/images/PointerText.png'), auto;
+
+}
+
+.container{
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #C8B8FF;
+    border: 4px solid black;
+    color: black;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.container p{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+    padding: 2px;
+    width: 60%;
+}
+ span{
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+.container input{
+    width: 100%;
+    height: 50px;
+    border: 3px solid #000;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    }
+    
+.container button{
+     width: 100%;
+     height: 50px; 
+     background: #5552FE;
+     color: #fff;
+     border: 3px solid black;
+     outline: 0;
+     border-radius: 6px;
+     margin: 20px 0;
+     font-weight: 700;
+
+    }
+
+#qrBox{
+       width: 200px;
+       max-height: 0;
+       overflow: hidden;
+       transition: max-height 1s;   
+       /* border: none; */
+       background: #fff;
+       border-radius: 10px;
+    }
+    
+#qrBox img{
+        border: none;
+        width: 100%;
+        padding: 10px;
+        
+     }
+
+#qrBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+
+.error{
+    animation: shake 0.1s linear 4;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

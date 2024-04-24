@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'whyte', Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #FFC700;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+html{
+    cursor: url('/assets/images/PointerBody.png'), auto;
+}
+
+ i {
+    cursor: url('/assets/images/PointerHover.png'), auto;
+}
+
+input, .header p, h3 {
+    cursor: url('/assets/images/PointerText.png'), auto;
+
+}
+
+
+.header{
+    width: 100%;
+    height: 80px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    gap: 8px;
+}
+
+.header p {
+    color: grey;
+    font-size: 12px;
+}
+
+.phoneUi{
+    border: 4px solid black;
+    width: 30%;
+    height: 80%;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+
+}
+
+.scrollbar {
+    height: 300px;
+    width: 50%;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.box{
+    width: 90%;
+    height: 80%;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #C8B8FF;
+    border: 4px solid black;
+    color: black;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.ui {
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.bar{
+    background-color: #2DD998; 
+    border: 3px solid black;
+    border-radius: 12px;
+    width: 25%;
+    height: 22px;
+   
+}
+
+.box .circle {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 12px;
+    border: 3px solid black;
+}
+
+
+input{
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #699CF8;
+    border: 4px solid black;
+    
+}
+::placeholder {
+    color: white;
+    opacity: 0.4; 
+  }
+  
+
+.todoBox{
+    list-style: none;
+    width: 100%;
+    overflow-y: auto;
+    height: 78%;
+}
+
+
+
+.todoBox li {
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid black;
+    margin: 20px 0px;
+    font-size: 16px;
+    padding-right: 45px;
+    text-align: justify;
+    user-select: none;
+
+    
+}
+
+.todoBox li i {
+    color: #FF8477;
+    -webkit-text-stroke: 0.5px #FF8477 ;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+
+.done{
+    text-decoration: 3px line-through;
+    color: #2DD998 !important;
+    
+}

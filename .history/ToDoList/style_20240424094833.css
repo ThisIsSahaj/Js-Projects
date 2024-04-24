@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    /* background-color: #000; */
+    background-color: #FFC700;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: monospace;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 22px;
+    gap: 12px;
+    /* border: 2px solid blue; */
+}
+
+.header p {
+    color: grey;
+    font-size: 16px;
+}
+
+
+
+.box{
+    /* border: 2px solid red; */
+    /* background-color: #C6B9FF;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+
+    width: 600px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #C8B8FF;
+    border: 4px solid black;
+    color: black;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+
+
+input{
+    width: 100%;
+    height: 70px;
+    border-radius: 15px;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    font-family: monospace;
+    background-color: #699CF8;
+    border: 4px solid black;
+    
+}
+::placeholder {
+    color: red;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { color: red;
+  }
+
+.todoBox{
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    list-style: none;
+    width: 100%;
+}
+
+
+
+.todoBox li {
+    position: relative;
+    /* background-color: rgb(34, 34, 34); */
+    background-color: white;
+    color: black;
+    /* box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1); */
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid black;
+   
+   
+
+    /* transition: box-shadow 0.25s; */
+    /* width: 100%; */
+    /* height: 50px; */
+    margin: 20px 0px;
+
+    font-size: 16px;
+    /* font-family: monospace; */
+    padding-right: 45px;
+    text-align: justify;
+    user-select: none;
+    
+}
+
+.todoBox li i {
+    /* color: rgb(142, 142, 142); */
+    color: #FF8477;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    /* top: 50%; */
+    top: 20px;
+
+}
+
+.done{
+    text-decoration: line-through;
+    color: grey !important;
+    
+}
