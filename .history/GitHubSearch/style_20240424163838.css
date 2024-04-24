@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'whyte', Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: #689BF7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    border: 4px solid black;
+    width: 80%;
+    height: 90%;
+    padding: 40px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.box{
+    border: 4px solid black;
+    width: 30%;
+    height: 80%;
+    border-radius: 30px;
+    background-color: #C8B8FF;
+    position: relative ;
+    text-align: center;
+}
+
+.leftBox{
+    background-color:  #FFC700;
+}
+.rightBox{
+    background-color: #2DD998;
+}
+
+.inputBox{
+    /* border: 2px solid green; */
+    height: 15%;
+}
+input{
+    /* background-color: white; */
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    padding: 12px;
+
+    background-color: #699CF8;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.6; 
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+.about{
+    /* border: 2px solid red; */
+    height: 40%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.profileImg{
+    border: 4px solid black;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    background-color: #2DD998;
+}
+
+.about h3{
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 6px;
+    padding: 4px;
+    max-width: 200px;
+    max-height: 70px;
+    overflow: auto;
+}
+
+.details{
+    /* border: 2px solid red; */
+    /* margin-top: 50px; */
+    height: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bio{
+    border: 4px solid black;
+    border-radius:8px;
+    max-height: 50%;
+    overflow: auto;
+    background-color: white;
+    /* background-color: #FF8477; */
+    padding: 8px;
+    text-align: justify;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.bio::-webkit-scrollbar {
+    display: none;
+  }
+
+.followers{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+    background-color: #699CF8;
+    border: 3px solid black;
+    border-radius: 8px;
+    font-weight: 600;
+    color: white;
+}
+
+.rightBox{
+    padding: 0px  30px;
+}
+
+.repositories{
+    overflow: auto;
+    margin-top: 10px;
+    /* border: 2px solid red; */
+    padding: 0px 10px 0px 0px;
+    height: 90%;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.rightBox h3{
+   margin-top: 20px;
+}
+
+.repo{
+    background-color: white;
+    border: 3px solid black;
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

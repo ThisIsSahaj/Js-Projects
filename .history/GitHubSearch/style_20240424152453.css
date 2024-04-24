@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    /* background-color: #2a2a72; */
+    /* background-image: linear-gradient(315deg, #2a2a72 0%, #2e2a68 74%); */
+    background-image: url("Background.png") ;
+    /* background-position: center center; */
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+input {
+    background-color: #4c2885;
+    border-radius: 10px;
+    border: none;
+    /* box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1); */
+    
+    border: #E2E8F0;
+    background-color: #0F1535;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 88px;
+    margin-bottom: 2rem;
+    width: 619px;
+    height: 62px;
+    color: white;
+}
+
+input::placeholder {
+    color: #A0AEC0;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.conatainer{
+
+    width: 1256px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.leftCard {
+    background-color: #060b28b6;
+    /* background-image: linear-gradient(315deg, #060B28 74%, #0E153A 71%); */
+    border-radius: 20px;
+    /* width: 546px; */
+    width: 40%;
+    height: 604px;
+    /* box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    max-width: 800px;
+}
+.rightCard {
+    background-color: #060b28b6;
+    /* background-image: linear-gradient(315deg, #060B28 74%, #0E153A 71%); */
+    border-radius: 20px;
+    /* width: 546px; */
+    width: 40%;
+    /* height: 604px; */
+    /* box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 800px;
+}
+.head{
+    height: 30px;
+    text-align: center;
+    font-size: 16;
+    font-weight: bold;
+    color: white;
+    margin: 24px 0px;
+}
+
+
+.avatar {
+    border-radius: 50%;
+    height: 221px;
+    width: 221px;
+    margin-top: 32px;
+}
+
+.user-info {
+    color: #ffffff;
+}
+
+.user-info h2 {
+    text-align: center;
+    margin-top: 0px ;
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-info p{
+   margin-bottom: 32px ;
+   font-weight: medium;
+}
+
+.user-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-info ul li {
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.details{
+    width: 280px;
+}
+#repos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.repo {
+    /* background-color: #2a2a72; */
+    /* background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(6,12,41,1) 53%, rgba(6,11,40,1) 68%, rgba(0,0,0,1) 88%); */
+/* 
+    background-image: linear-gradient(
+        135deg,
+        hsl(230deg 74% 9%) 0%,
+        hsl(230deg 76% 9%) 1%,
+        hsl(229deg 79% 10%) 2%,
+        hsl(229deg 81% 10%) 3%,
+        hsl(229deg 83% 10%) 4%,
+        hsl(229deg 85% 10%) 6%,
+        hsl(232deg 90% 10%) 9%,
+        hsl(234deg 96% 9%) 12%,
+        hsl(237deg 100% 8%) 18%,
+        hsl(240deg 100% 8%) 34%,
+        hsl(0deg 0% 0%) 100%
+      ); */
+
+
+    border-radius: 20px;
+    width: 40%;
+    height: 93px;
+    margin-bottom: 32px;
+   
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+body{
+    background-color: #689BF7;
+}
+
+.container{
+    border: 4px solid black;
+    width: 30%;
+    height: 80%;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
