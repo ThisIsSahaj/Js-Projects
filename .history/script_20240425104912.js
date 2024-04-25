@@ -21,13 +21,6 @@ const cards = [
         codeLink: 'https://github.com/ThisIsSahaj/Js-Projects/tree/main/ParagraphGenerator',
     },
     {
-        image: 'assets/images/github.png',
-        title: 'Github Search',
-        description: 'Search for a github profile',
-        projLink: 'GitHubSearch/index.html',
-        codeLink: 'https://github.com/ThisIsSahaj/Js-Projects/tree/main/GitHubSearch',
-    },
-    {
         image: 'assets/images/todolist.png',
         title: 'To Do List',
         description: 'Create, Delete, Refresh',
@@ -41,7 +34,13 @@ const cards = [
         projLink: 'QRcodeGen/index.html',
         codeLink: 'https://github.com/ThisIsSahaj/Js-Projects/tree/main/QRcodeGen',
     },
-    
+    {
+        image: 'assets/images/github.png',
+        title: 'Github Search',
+        description: 'Search for a github profile',
+        projLink: 'GitHubSearch/index.html',
+        codeLink: 'https://github.com/ThisIsSahaj/Js-Projects/tree/main/GitHubSearch',
+    },
     
 ]
 

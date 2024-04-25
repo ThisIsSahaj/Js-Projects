@@ -102,18 +102,10 @@ input.addEventListener('keyup', (event)=>{
 
 
 
-// ✅ Get the Date
-inputDate.addEventListener('change', saveDateLS);
-
-inputDate.addEventListener('click', console.log('clicked'))
-
-
-
-
 
 // ✅ GETTING DATA BACK FROM LOCAL SOTRAGE
 
-// 1️⃣ Getting back TASKS
+// 1️⃣ Getting back tasks
 const taskAvailable = JSON.parse(localStorage.getItem('tasks'));
 
 if(taskAvailable)
@@ -125,11 +117,11 @@ if(taskAvailable)
     
 
 
-
-// 2️⃣ Getting back DATE
+    
+// 2️⃣ Getting back date
 const savedDate = localStorage.getItem('date');
       if (savedDate) {
         inputDate.value = savedDate;
       }
 
-
+inputDate.addEventListener('change', saveDateLS);

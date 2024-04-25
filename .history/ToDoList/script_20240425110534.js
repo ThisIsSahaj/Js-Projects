@@ -4,14 +4,7 @@ const inputDate = document.querySelector('#inputDate');
 
 
 
-
-
-
-
-
 // ✅ LOCAL STORAGE 
-
-// 1️⃣ Task Local Storage
 const updateLS = () => {
     const taskValue = document.querySelectorAll('li');
 
@@ -24,12 +17,6 @@ const updateLS = () => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
     localStorage.setItem('date', JSON.stringify(inputDate.value));
 
-}
-
-
-// 2️⃣ Date Local Storage
-const saveDateLS = () => {
-    localStorage.setItem('date', inputDate.value);
 }
 
 
@@ -102,19 +89,10 @@ input.addEventListener('keyup', (event)=>{
 
 
 
-// ✅ Get the Date
-inputDate.addEventListener('change', saveDateLS);
-
-inputDate.addEventListener('click', console.log('clicked'))
-
-
-
-
 
 // ✅ GETTING DATA BACK FROM LOCAL SOTRAGE
-
-// 1️⃣ Getting back TASKS
 const taskAvailable = JSON.parse(localStorage.getItem('tasks'));
+const dateAvailable = JSON.parse(localStorage.getItem('date'));
 
 if(taskAvailable)
 {
@@ -122,14 +100,9 @@ if(taskAvailable)
     {
         addTask(curTask);
     })};
+
+if (dateAvailable) {
+       
+}
+
     
-
-
-
-// 2️⃣ Getting back DATE
-const savedDate = localStorage.getItem('date');
-      if (savedDate) {
-        inputDate.value = savedDate;
-      }
-
-

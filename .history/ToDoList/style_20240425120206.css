@@ -27,16 +27,18 @@ html{
     cursor: url('/assets/images/PointerText.png'), auto;
 
 }
-/* 
+
 .container{
     border: 2px solid red;
     width: 100%;
     height: 50%;
-} */
+}
 
 
 /* PHONE UI */
-
+/* .ui input{
+    
+} */
 
 .phoneUi{
     border: 4px solid black;
@@ -95,16 +97,29 @@ html{
     margin-top: 10px;
 }
 
- .ui input{
+.ui .dateInput{
     background-color: #2DD998; 
     border: 3px solid black;
     border-radius: 12px;
-    width: 38%;
-    height: 22px;
+    width: 45%;
+    height: 40px;
     margin-top: -10px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+ .ui input{
+    /* background-color: #2DD998;  */
+    background-color: transparent;
+    border: none;
+    border: 3px solid black;
+    border-radius: 12px;
+    width: 90%;
+    height: 18px;
+    margin-top: -10px;
+   
+}
+ 
 input[type="date"]::-webkit-calendar-picker-indicator {
     background: transparent;
     color: transparent;
@@ -113,9 +128,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
     top: 10;
     width: auto;
-    width: 30%;
+    width: 45%;
     height: 34px;
-    margin-left: 35px;
 }
 
 .box .ui .circleDiv {

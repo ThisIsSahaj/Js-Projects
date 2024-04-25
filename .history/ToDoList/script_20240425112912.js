@@ -105,7 +105,6 @@ input.addEventListener('keyup', (event)=>{
 // ✅ Get the Date
 inputDate.addEventListener('change', saveDateLS);
 
-inputDate.addEventListener('click', console.log('clicked'))
 
 
 
@@ -131,5 +130,3 @@ const savedDate = localStorage.getItem('date');
       if (savedDate) {
         inputDate.value = savedDate;
       }
-
-

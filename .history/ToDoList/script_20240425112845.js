@@ -104,8 +104,12 @@ input.addEventListener('keyup', (event)=>{
 
 // ✅ Get the Date
 inputDate.addEventListener('change', saveDateLS);
-
-inputDate.addEventListener('click', console.log('clicked'))
+inputDate.addEventListener('click', function() {
+    this.blur(); // Remove focus from the input
+    setTimeout(function() {
+      inputDate.focus(); // Re-focus on the input
+    }, 0);
+  });
 
 
 
@@ -131,5 +135,3 @@ const savedDate = localStorage.getItem('date');
       if (savedDate) {
         inputDate.value = savedDate;
       }
-
-

@@ -27,16 +27,18 @@ html{
     cursor: url('/assets/images/PointerText.png'), auto;
 
 }
-/* 
+
 .container{
     border: 2px solid red;
     width: 100%;
     height: 50%;
-} */
+}
 
 
 /* PHONE UI */
-
+/* .ui input{
+    
+} */
 
 .phoneUi{
     border: 4px solid black;
