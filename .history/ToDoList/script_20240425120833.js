@@ -22,6 +22,8 @@ const updateLS = () => {
     });
 
     localStorage.setItem('tasks', JSON.stringify(tasks));
+    localStorage.setItem('date', JSON.stringify(inputDate.value));
+
 }
 
 
