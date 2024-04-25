@@ -26,11 +26,11 @@ html{
 
 input, p, h3 {
     cursor: url('/assets/images/PointerText.png'), auto;
+
 }
 
-
-
 /* Main Container */
+
 .main{
     width: 100%;
     width: 1000px;
@@ -40,7 +40,6 @@ input, p, h3 {
     align-items: center ;
     padding: 0px 40px;
 }
-
 
 
 
@@ -170,10 +169,9 @@ img{
 }
 
 
-
-
-
 /* RIGHT BOX */
+
+
 .rightUi{
     display: flex;
     margin-top: 10px;
@@ -208,10 +206,9 @@ img{
 }
 
 
-
-
-
 /* Repository*/
+
+
 .repo{
     background-color: white;
     border: 3px solid black;
@@ -225,13 +222,13 @@ img{
     justify-content: center;
     text-decoration: none;
     color: black;
+
+
 }
 
 
-
-
-
 /* RESPONSIVE */
+
 @media (max-width: 1024px){
  
  .box{

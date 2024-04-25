@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-family: 'whyte', Arial, Helvetica, sans-serif;
 }
 
@@ -11,7 +11,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 
 }
 
@@ -26,48 +25,45 @@ html{
 
 input, p, h3 {
     cursor: url('/assets/images/PointerText.png'), auto;
+
 }
 
-
-
-/* Main Container */
-.main{
-    width: 100%;
-    width: 1000px;
-    height: 600px;
+.container{
+    border: 4px solid black;
+    /* background-color: white; */
+    width: 80%;
+    /* width: 1300px; */
+    height: 90%;
+    padding: 40px;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     display: flex;
-    justify-content: space-between;
-    align-items: center ;
-    padding: 0px 40px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-
-
-
-/* Both Boxes */
 .box{
     border: 4px solid black;
-    width: 430px;
-    height: 600px;
+    width: 30%;
+    /* width: 430px; */
+    height: 80%;
+    height: 900px;
     border-radius: 30px;
     background-color: #C8B8FF;
     position: relative ;
-    text-align: center;    
+    text-align: center;
 }
-
 
 .leftBox{
     background-color:  #FFC700;
 }
 .rightBox{
     background-color: #2DD998;
-    padding: 0px  30px;
 }
 
-
-
-
-/* LEFT BOX */
 .inputBox{
     height: 15%;
 }
@@ -78,9 +74,11 @@ input{
     height: 50px;
     margin-top: 20px;
     padding: 12px;
+
     background-color: #699CF8;
     font-size: 18px;
     font-weight: 600;
+
 }
 
 ::placeholder {
@@ -169,13 +167,14 @@ img{
     color: white;
 }
 
+.rightBox{
+    padding: 0px  30px;
+}
 
-
-
-
-/* RIGHT BOX */
 .rightUi{
     display: flex;
+    justify-content: start;
+    align-items: center;
     margin-top: 10px;
 }
 
@@ -208,10 +207,6 @@ img{
 }
 
 
-
-
-
-/* Repository*/
 .repo{
     background-color: white;
     border: 3px solid black;
@@ -225,35 +220,16 @@ img{
     justify-content: center;
     text-decoration: none;
     color: black;
+
+
 }
 
-
-
-
-
-/* RESPONSIVE */
-@media (max-width: 1024px){
- 
- .box{
-    width: 370px;
-    height: 500px;
- }
-}
-@media (max-width: 848px){
- .main{
-    width: 100%;
+@media (max-width: 1124px){
+ .container{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 20px
  }
- .followers p{
-    font-size: 14px;
-    
- }
-}
-
-@media (max-width: 475px){
-    .box{
-        width: 320px;
-     }
 }
