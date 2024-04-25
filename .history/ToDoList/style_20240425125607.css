@@ -30,6 +30,11 @@ html{
 
 
 
+.main{
+    border: 2px solid red;
+    width: 100%;
+    height: 100vw;
+}
 
 
 /* PHONE UI */
@@ -143,6 +148,7 @@ input{
     font-size: 20px;
     background-color: #699CF8;
     border: 4px solid black;
+    
 }
 ::placeholder {
     color: white;
@@ -160,8 +166,8 @@ input{
     list-style: none;
     width: 100%;
     overflow-y: auto;
-    height: 76%;
-    padding: 0px 10px;    
+    height: 78%;
+    padding: 0px 10px;
 }
 
 .todoBox li {
@@ -243,62 +249,91 @@ input{
 
 
 
+
+
+
+
+
 /* RESPONSIVE  */
 
-
-
-@media (max-width: 648px)
-{
+/* @media (min-width: 400px) {
     .phoneUi{
-        width: 440px;
-        height: 70%;
+        width: 380px;
+        height: 80%;
     }
     .ui input{
-        width: 60%;
+        width: 70%;
+        height: 14px;
+    }
+
+}
+@media (min-width: 680px) {
+    .phoneUi{
+        width: 580px;
+        height: 80%;
+    }
+    .ui input{
+        width: 40%;
         height: 22px;
     }
-    .header{
-        gap: 4px;
-        margin-top: -8px;
+} */
+
+
+/* lg */
+@media (max-width: 1024px)
+{
+    .phoneUi{
+        width: 580px;
+        height: 80%;
     }
-    .todoBox{
-        height: 72%;
+    .ui input{
+        width: 40%;
+        height: 22px;
     }
 }
 
+/* md */
+/* @media (max-width: 768px)
+{
 
+} */
+
+/* sm */
+@media (max-width: 648px)
+{
+    .phoneUi{
+        width: 580px;
+        height: 60%;
+    }
+    .ui input{
+        width: 40%;
+        height: 22px;
+    }
+}
+
+/* xs */
 @media (max-width: 475px)
+{
+
+}
+@media (max-width: 375px)
 {
     .phoneUi{
         width: 340px;
         height: 60%;
+    }
+    .ui{
+        border: 2px solid red;
     }
     .ui input{
         width: 80%;
         height: 22px;
     }
     .ui .circleDiv{
-        display: none !important;
+        border: 2px solid red;
+        /* display: none !important; */
     }
-    .header{
-        font-size: 18px;
-        gap: 4px;
-        margin-top: -10px;
+    .ui .circle{
+        /* display: none; */
     }
-    .header p {
-        color: grey;
-        font-size: 10px;
-    }
-
-    input{
-        height: 60px;
-    }
-
-    .todoBox{
-        height: 69%;
-    }
-    
-
 }
-
-

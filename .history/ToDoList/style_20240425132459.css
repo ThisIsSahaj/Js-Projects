@@ -30,6 +30,11 @@ html{
 
 
 
+.main{
+    border: 2px solid red;
+    width: 100%;
+    height: 100vw;
+}
 
 
 /* PHONE UI */
@@ -302,3 +307,39 @@ input{
 }
 
 
+
+@media (max-width: 375px)
+{
+    .phoneUi{
+        width: 240px;
+        height: 40%;
+    }
+    .ui input{
+        width: 80%;
+        height: 22px;
+    }
+    .ui .circleDiv{
+        display: none !important;
+    }
+    .header{
+        font-size: 18px;
+        gap: 4px;
+        margin-top: -10px;
+    }
+    .header p {
+        color: grey;
+        font-size: 10px;
+    }
+
+    input{
+        height: 30px;
+        width: 130px;
+    }
+
+    .todoBox{
+        height: 69%;
+        border: 2px solid red;
+    }
+    
+   
+}
