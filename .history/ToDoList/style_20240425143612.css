@@ -37,6 +37,7 @@ html{
 
 .phoneUi{
     border: 4px solid black;
+    /* width: 30%; */
     width: 580px;
     height: 80%;
     border-radius: 30px;
@@ -49,7 +50,7 @@ html{
 }
 .header{
     width: 100%;
-    height: 10%;
+    height: 80px;
     color: black;
     display: flex;
     flex-direction: column;
@@ -89,14 +90,14 @@ html{
     display: flex; 
     justify-content: space-between;
     align-items: center;
+    /* margin-bottom: 40px; */
+    /* margin-top: 10px; */
     height: 20%;
     
 }
 .inputDiv{
-    height: 14%;
-
+    height: 20%;
 }
-
 
  .ui input{
     background-color: #2DD998; 
@@ -104,6 +105,7 @@ html{
     border-radius: 12px;
     width: 40%;
     height: 22px;
+    /* margin-top: -10px; */
     
 }
 
@@ -140,8 +142,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* INPUT FIELD */
 input{
     width: 100%;
-    /* height: 70px; */
-    height: 100%;
+    height: 70px;
     border-radius: 15px;
     color: black;
     padding: 20px;
@@ -158,13 +159,14 @@ input{
 
 
 
+
+
 /* TODO ITEMS */
 .todoBox{
     list-style: none;
     width: 100%;
     overflow-y: auto;
-    /* height: 76%; */
-    max-height: 66%;
+    height: 76%;
     padding: 0px 10px;    
 }
 
@@ -255,12 +257,19 @@ input{
 {
     .phoneUi{
         width: 440px;
+        height: 70%;
     }
     .ui input{
         width: 60%;
         height: 22px;
     }
-    
+    .header{
+        gap: 4px;
+        margin-top: -8px;
+    }
+    .todoBox{
+        height: 72%;
+    }
 }
 
 
@@ -268,9 +277,10 @@ input{
 {
     .phoneUi{
         width: 340px;
+        height: 70%;
     }
     .ui input{
-        width: 100%;
+        width: 80%;
         height: 22px;
     }
     .ui .circleDiv{
@@ -278,11 +288,23 @@ input{
     }
     .header{
         font-size: 18px;
+        gap: 4px;
+        margin-top: -10px;
     }
     .header p {
         color: grey;
         font-size: 10px;
     }
+
+    input{
+        height: 60px;
+    }
+
+    .todoBox{
+        height: 250px;
+        border: 2px solid red;
+    }
+    
 
 }
 

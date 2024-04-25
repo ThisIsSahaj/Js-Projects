@@ -260,7 +260,12 @@ input{
         width: 60%;
         height: 22px;
     }
-    
+    /* .header{
+        gap: 4px;
+    } */
+    .todoBox{
+        height: 72%;
+    }
 }
 
 
@@ -278,6 +283,7 @@ input{
     }
     .header{
         font-size: 18px;
+        gap: 4px;
     }
     .header p {
         color: grey;
