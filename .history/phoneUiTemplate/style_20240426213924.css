@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'whyte', Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #FFC700;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* CURSORS */
+html{
+    cursor: url('/assets/images/PointerBody.png'), auto;
+}
+
+ i, #inputDate {
+    cursor: url('/assets/images/PointerHover.png'), auto;
+}
+
+#todoInput, .header p, h3 {
+    cursor: url('/assets/images/PointerText.png'), auto;
+
+}
+
+
+
+
+
+/* PHONE UI */
+
+
+.phoneUi{
+    border: 4px solid black;
+    width: 580px;
+    height: 80%;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.header{
+    width: 100%;
+    height: 10%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    gap: 8px;
+}
+
+.header p {
+    color: grey;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+/* Container inside*/
+.box{
+    width: 90%;
+    height: 80%;
+    padding: 0px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #C8B8FF;
+    border: 4px solid black;
+    color: black;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.box .ui {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    
+}
+
+
+.inputDiv{
+    height: 14%;
+
+}
+
+
+ .ui input{
+    background-color: #2DD998; 
+    border: 3px solid black;
+    border-radius: 12px;
+    width: 40%;
+    height: 22px;
+    
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    color: transparent;
+    cursor: url('/assets/images/PointerHover.png'), auto;
+    left: 0;
+    position: absolute;
+    top: 10;
+    width: auto;
+    width: 30%;
+    height: 34px;
+    margin-left: 35px;
+}
+
+.greenBars{
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+   }
+   
+   .greenBars span {
+       border-radius: 12px;
+       border: 3px solid black;
+       width: 50%; 
+       height: 22px;
+   }
+
+.circleDiv {
+    display: flex; 
+    justify-content: space-around; 
+    width: 100px;
+}
+
+.circleDiv span {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 12px;
+    border: 3px solid black;
+}
+
+
+
+
+
+/* INPUT FIELD */
+input{
+    width: 100%;
+    /* height: 70px; */
+    height: 100%;
+    border-radius: 15px;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #699CF8;
+    border: 4px solid black;
+}
+::placeholder {
+    color: white;
+    opacity: 0.4; 
+  }
+  
+
+
+
+
+/* TODO ITEMS */
+.todoBox{
+    list-style: none;
+    width: 100%;
+    overflow-y: auto;
+    /* height: 76%; */
+    max-height: 66%;
+    padding: 0px 10px;    
+}
+
+.todoBox li {
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid black;
+    margin: 20px 0px;
+    font-size: 16px;
+    padding-right: 45px;
+    text-align: justify;
+    user-select: none;
+}
+
+.todoBox li i {
+    color: #FF8477;
+    -webkit-text-stroke: 0.5px #FF8477 ;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+
+
+
+
+/* TODO ITEMS SCROLLBAR */
+.scrollbar::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+/* CLASSES HANDLED BY JS */
+.done{
+    text-decoration: 2px line-through;
+    color: #2DD998 !important;    
+}
+
+.error{
+    animation: shake 0.1s linear 4;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+/* RESPONSIVE  */
+
+
+
+@media (max-width: 648px)
+{
+    .phoneUi{
+        width: 440px;
+    }
+   
+    
+}
+
+
+@media (max-width: 475px)
+{
+    .phoneUi{
+        width: 340px;
+    }
+   
+    .ui .circleDiv{
+        display: none !important;
+    }
+    .header{
+        font-size: 18px;
+    }
+    .header p {
+        color: grey;
+        font-size: 10px;
+    }
+
+}
+
+
