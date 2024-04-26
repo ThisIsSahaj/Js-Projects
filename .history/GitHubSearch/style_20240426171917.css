@@ -294,7 +294,6 @@ input{
 @media (max-width: 910px) {
     .phoneUi{
         width: 580px;
-        height: 80%;
     }
     .info .firstBox{
         height: 100%;
