@@ -66,6 +66,7 @@ input, p, h3 {
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: #C8B8FF;
+    /* background-color: #FFC700; */
     border: 4px solid black;
     color: black;
     border-radius: 12px;
@@ -77,9 +78,11 @@ input, p, h3 {
     justify-content: space-between;
     align-items: center;
     height: 15%;
+    /* border: 2px solid green;    */
 }
 
 .greenBars{
+ /* border: 2px solid green; */
  width: 40%;
  display: flex;
  justify-content: start;
@@ -106,6 +109,7 @@ input, p, h3 {
 }
 
 .searchInput{
+    /* border: 2px solid green; */
     height: 10%;
     display: flex;
     align-items: center;
@@ -130,13 +134,17 @@ input{
 
 .info{
     height: 75%;
+    /* border: 2px solid green; */
     display: flex;
+    /* padding: 20px 10px; */
+    /* gap: 18px; */
     flex-wrap: wrap;
     overflow: auto;
 }
 
 
 .info .firstBox{
+    /* border: 2px solid red; */
     height: 100%;
     width: 50%;
     display: flex;
@@ -164,6 +172,7 @@ input{
     height: 30%;
     background-color: white;
     text-align: justify;
+    /* margin-top: 80px; */
 }
 
 .info .about .name{
@@ -178,21 +187,27 @@ input{
     align-items: center;
     font-weight: 800;
     text-transform: uppercase;
-    /* background-color: #FF8477; */
+    background-color: #FF8477;
     background-color: #FFC700;
+
+
 }
 
 .info .about .bio{
     padding: 8px;
     height: 70%;
-    overflow: auto;   
+    overflow: auto;
+
+    
 }
 
 .bio::-webkit-scrollbar {
     display: none;
   }
 
-  .info .followers{
+
+
+.info .followers{
     width: 100%;
     height: 40px;
     display: flex;
@@ -216,6 +231,7 @@ input{
     width: 80%;
     border-radius: 20px;
     background-color: #2DD998;
+    /* padding: 20px; */
 }
 
 .info .repoHeader{
@@ -239,9 +255,15 @@ input{
 }
 
 .info .repositories{
+    /* border: 3px solid green; */
     overflow: auto;
+    /* margin-top: 10px; */
+    /* padding: 0px 10px 0px 0px; */
     height: 92%;
-    padding: 20px;    
+    padding: 20px;
+
+    
+    
 }
 
 .info .repo{

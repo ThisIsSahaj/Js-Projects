@@ -1,6 +1,6 @@
 const APIURL = 'https://api.github.com/users/';
 
-const leftBox = document.querySelector('.profile');
+const profileSec = document.querySelector('.profileSec');
 const rightBox = document.querySelector('.rightBox');
 const input = document.querySelector('input');
 const repositories = document.querySelector('.repositories');
@@ -17,33 +17,30 @@ const getUser = async (username) => {
     
     
     
-const leftBoxHtmlData = `
+const profileSecHtmlData = `
 
+<div class="image">
+<img src="${data.avatar_url}" alt="">
+</div>
 <div class="about">
-<div class="profileImg">
-<img src= "${data.avatar_url}" alt="avatar">
-                </div>
-                <h3>${data.name}</h3>
-                </div>
-            <div class="details">
-            <div class="bio ">
-                <p>${data.bio}</p>
-                </div>
-                <div class="followers">
-                <p> ${data.followers} Followers</p>
-                • 
-                <p> ${data.following} Following </p> 
-                •
-                <p> ${data.public_repos} Repositories </p> 
-                
-              </div>
-              </div>
-              
+    <div class="name">${data.name}</div>
+    <div class="bio">${data.bio}
+    </div>
+    
+</div>
+<div class="followers"> 
+    <p> ${data.followers} Followers</p>
+    • 
+    <p> ${data.following}  Following </p> 
+    •
+    <p> ${data.public_repos} Repositories </p> </div>
+</div>
+       
               `
 
 getRepos(username);
-// leftBox.insertAdjacentHTML("beforeend",leftBoxHtmlData);
-leftBox.innerHTML = leftBoxHtmlData;
+// profileSec.insertAdjacentHTML("beforeend",profileSecHtmlData);
+profileSec.innerHTML = profileSecHtmlData;
 
 
 } 
