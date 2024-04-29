@@ -1,17 +1,3 @@
-/* COLOR PALETTE */
-
-/* 
-
-yellow    #FFC700
-red       #FF8477
-green     #2DD998
-blue      #699CF8
-purple    #C8B8FF
-orange    #EF4F1E
-
-*/
-
-
 
 *{
     margin: 0;
@@ -22,9 +8,10 @@ orange    #EF4F1E
 }
 
 body{
-    background-color: #FFC700;
+    /* background-color: #FFC700; */
     display: flex;
     flex-wrap: wrap;
+    background: #FF8477;
 }
 
 
@@ -44,6 +31,50 @@ html{
 }
 
 
+
+#qrBox{
+    width: 200px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;   
+    background: #fff;
+    border-radius: 10px;
+    
+ }
+ 
+#qrBox img{
+     border: none;
+     width: 100%;
+     padding: 10px;
+     
+  }
+
+#qrBox.show-img{
+ max-height: 300px;
+ margin: 10px auto;
+ border: 3px solid black;
+}
+
+button{
+    width: 100%;
+    height: 50px; 
+    background: #5552FE;
+    background: #FFC801;
+    color: black ;
+    border: 3px solid black;
+    outline: 0;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-weight: 700;
+
+   }
+
+
+   .qrDiv{
+        border: 2px solid green;
+        height: 70%;
+    }
+    
 
 
 
@@ -168,7 +199,7 @@ input{
 
 /* MAIN CONTENT */
 .content{
-    /* border: 2px solid green; */
+    border: 2px solid green;
     width: 100%;
     overflow: auto;
     height: 66%;
@@ -257,10 +288,19 @@ input{
 
 }
 
-@media (max-height: 500px)
+@media (max-height: 790px)
+{
+    #qrBox.show-img{
+        max-height: 200px;
+        margin: 10px auto;
+        border: 3px solid black;
+       }
+}
+
+@media (max-height: 625px)
 {
     .notch h3 {
         font-size: 14px;
-    }
-}
+    }    
+}    
 

@@ -10,7 +10,26 @@
 
 </head>
 <body>
-     <div class="phoneUi">
+    <!-- <div class="container">
+        <div class="header" style="display: flex; justify-content: space-between;">
+            <p>ENTER A TEXT OR URL</p>
+            <div style="display: flex; gap: 8px;">
+                <span style=" background-color: #FFC700; border: 2px solid black;"></span>
+                <span style=" background-color: #EF4F1E; border: 2px solid black;" ></span> 
+            </div>
+
+        </div>
+        <input type="text" placeholder="Text or URL" id="input">
+        <div id="qrBox">
+            <img src="" id="qrImg">
+        </div>
+        <button onclick="generate()">Generate QR Code</button>
+    </div> -->
+
+
+
+
+    <div class="phoneUi">
           
         <div class="notch">
           <h3>Generate QR Code</h3>  
@@ -24,10 +43,12 @@
                 <div class="greenBars">
 
                     <span  style="background-color: #2DD998;"></span>
+                    <!-- <span  style="background-color: #FFC700;"></span>
+                    <span  style="background-color: #FFC700;"></span> -->
                 </div>
                 
                 <div class="circleDiv">
-                   <span  style=" background-color: #EF4F1E;" ></span> 
+                   <span  style=" background-color: #FF8477;" ></span> 
                    <span  style=" background-color: #FFC700;" ></span> 
                    <span  style=" background-color: #699CF8;" ></span> 
                 </div>
@@ -40,16 +61,10 @@
 
       
             <div class="content scrollbar">
-                <div class="qrDiv">
-
-                    <div id="qrBox">
-                        <img src="" id="qrImg">
-                    </div>
+                <div id="qrBox">
+                    <img src="" id="qrImg">
                 </div>
-                
-
-                    <button onclick="generate()">Generate QR Code</button>
-               
+                <button onclick="generate()">Generate QR Code</button>
             </div>
             
         </div>
