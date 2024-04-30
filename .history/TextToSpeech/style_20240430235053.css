@@ -277,12 +277,6 @@ textarea{
     .phoneUi{
         width: 440px;
     }
-    .content select {
-        width: 70%;
-    }
-    .content button {
-        width: 30%;
-    }
     
 }
 
@@ -303,10 +297,10 @@ textarea{
         font-size: 10px;
     }
     .content select {
-        width: 65%;
+        width: 60%;
     }
     .content button {
-        width: 35%;
+        width: 0%;
     }
 
 }
