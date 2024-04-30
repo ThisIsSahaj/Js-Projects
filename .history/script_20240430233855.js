@@ -44,7 +44,7 @@ const cards = [
     {
         image: 'assets/images/texttospeech.png',
         title: 'Text to Speech Converter',
-        description: 'Convert any text to Speech, with a range of voices to select from',
+        description: 'Convert any text to Speech with a range of voices to select from',
         projLink: 'TextToSpeech/index.html',
         codeLink: 'https://github.com/ThisIsSahaj/Js-Projects/tree/main/TextToSpeech',
     },

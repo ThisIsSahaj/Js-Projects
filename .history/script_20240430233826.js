@@ -42,9 +42,9 @@ const cards = [
         codeLink: 'https://github.com/ThisIsSahaj/Js-Projects/tree/main/QRcodeGen',
     },
     {
-        image: 'assets/images/texttospeech.png',
+        image: 'assets/images/qrcode.png',
         title: 'Text to Speech Converter',
-        description: 'Convert any text to Speech, with a range of voices to select from',
+        description: 'Convert any text to Speech with a range of voices to select from',
         projLink: 'TextToSpeech/index.html',
         codeLink: 'https://github.com/ThisIsSahaj/Js-Projects/tree/main/TextToSpeech',
     },
