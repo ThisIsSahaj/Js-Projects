@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+
+        <div class="phoneUi">
+          
+            <div class="notch">
+              <h3>Password Generator</h3>  
+              <p>STRONG PASSWORDS ONLY</p>
+            </div>
+            
+            <div class="screen" >
+                
+                <div class="screenHeader" >
+                    
+                    <div class="greenBars">
+
+                        <span  style="background-color: white;"></span>
+                        <!-- <span  style="background-color: black;"></span> -->
+                        <!-- <span  style="background-color: #FFC700;"></span> -->
+                    </div>
+                    
+                    <div class="circleDiv">
+                       <span  style=" background-color: #2DD998;" ></span> 
+                       <span  style=" background-color: #FFC700;" ></span> 
+                       <span  style=" background-color: #699CF8;" ></span> 
+                    </div>
+
+                </div>
+                
+                <div class="inputDiv">
+                      <input type="text" placeholder="Password" id="display" >
+                </div>
+          
+                <div class="content">
+                   <div class="row">
+                       <label for="length">Length:</label> <input type="range" value="8" min="1" max="30" id="lengthSlider"> 
+                       <input type="number" value="8" min="1" max="30" id="lengthNumber">
+                   </div> 
+                   <div class="row">
+                      <label class="container">Include Uppercase
+                        <input type="checkbox"  id="uppercase">
+                        <span class="checkmark"></span>
+                      </label>
+                   </div> 
+                   <div class="row">
+                      <label class="container">Include Lowercase
+                        <input type="checkbox"  id="lowercase">
+                        <span class="checkmark"></span>
+                      </label>
+                   </div> 
+                   <div class="row">
+                      <label class="container">Include Numbers
+                        <input type="checkbox"  id="numbers">
+                        <span class="checkmark"></span>
+                      </label>
+                   </div> 
+                   <div class="row">
+                      <label class="container">Include Symbols
+                        <input type="checkbox"  id="symbols">
+                        <span class="checkmark"></span>
+                      </label>
+                   </div> 
+                   <div class="row">
+                      <label class="container">Exclude Duplicate
+                        <input type="checkbox"  id="duplicate">
+                        <span class="checkmark"></span>
+                      </label>
+                   </div> 
+                   <div class="row">
+                      <button>Generate</button>
+                   </div> 
+                   
+
+                </div>
+                
+            </div>
+
+        </div>
+</body>
+
+<script src="script.js"></script>
+</html>

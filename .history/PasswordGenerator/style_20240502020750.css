@@ -1,0 +1,381 @@
+/* COLOR PALETTE */
+
+/* 
+
+yellow    #FFC700
+red       #FF8477
+green     #2DD998
+blue      #699CF8
+purple    #C8B8FF
+dark blue #5552FE
+orange    #EF4F1E
+
+*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'whyte', Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #5552FE;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* CURSORS */
+html{
+    cursor: url('/assets/images/PointerBody.png'), auto;
+}
+
+ button , .row input, .row label {
+    cursor: url('/assets/images/PointerHover.png'), auto;
+}
+
+.notch p, h3, input {
+    cursor: url('/assets/images/PointerText.png'), auto;
+}
+
+
+
+
+
+/* PHONE UI */
+.phoneUi{
+    border: 4px solid black;
+    width: 580px;
+    height: 80%;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.notch{
+    width: 100%;
+    height: 10%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    gap: 8px;
+}
+
+.notch p {
+    color: grey;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+/* SCREEN */
+.screen{
+    width: 90%;
+    height: 80%;
+    padding: 0px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: #C8B8FF; */
+    /* background-color: #FFC700; */
+    background-color: #EF4F1E;
+    border: 4px solid black;
+    color: black;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.screenHeader {
+    /* border: 2px solid green; */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+}
+
+
+.greenBars{
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+   
+.greenBars span {
+    border-radius: 12px;
+    border: 3px solid black;
+    width: 50%; 
+    height: 22px;
+ }
+ 
+.circleDiv {
+    display: flex; 
+    justify-content: space-around; 
+    width: 100px;
+}
+
+.circleDiv span {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 12px;
+    border: 3px solid black;
+}
+
+
+
+
+
+/* INPUT FIELD */
+
+.inputDiv{
+    /* border: 2px solid green; */
+    height: 14%;
+    display: flex;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.inputDiv input{
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    /* background-color: #699CF8; */
+    /* background-color: #FFC700; */
+    /* background-color: transparent; */
+    border: 4px solid black;
+}
+::placeholder {
+    color: white;
+    opacity: 0.4; 
+  }
+  
+.inputDiv i {
+    width: 10%;
+    height: 100%;
+    color: white;
+}
+
+
+
+
+/* MAIN CONTENT */
+.content{
+    /* border: 2px solid green; */
+    width: 100%;
+    overflow: auto;
+    height: 66%;
+    padding: 0px 10px;    
+}
+
+
+.row {
+     /* border: 2px solid green; */
+     padding: 4px 0px;
+     gap: 4px;
+     height: 14.28%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.row button {
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #FFC700;
+}
+
+
+.row label{
+    font-size: 22px;
+    /* user-select: none; */
+}
+
+
+
+
+/* RESPONSIVE  */
+
+@media (max-width: 648px)
+{
+    .phoneUi{
+        width: 440px;
+    }
+    
+}
+
+
+@media (max-width: 475px)
+{   
+    .screen{
+        padding: 0px 10px;
+    }
+    .phoneUi{
+        width: 340px;
+    }
+    .notch{
+        font-size: 18px;
+    }
+    .notch p {
+        color: grey;
+        font-size: 10px;
+    }
+    .row label{
+        font-size: 18px;
+    }
+    
+
+}
+
+@media (max-height: 500px)
+{
+    .notch h3 {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+/********** CUSTOM CHECKBOXES **********/
+
+/* The container */
+.container {
+    /* border: 2px solid blue; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    user-select: none;
+    width: 70%;
+    width: 90%;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 2px solid black;
+    border-radius: 6px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2DD998;
+    /* border: none; */
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+
+
+
+
+
+/********** Range Input Styles **********/
+/*Range Reset*/
+input[type="range"] {
+    -webkit-appearance: none;
+     appearance: none;
+     background: transparent;
+     width: 15rem;
+ }
+ 
+ /* Removes default focus */
+ input[type="range"]:focus {
+   outline: none;
+ }
+ 
+ /***** Chrome, Safari, Opera and Edge Chromium styles *****/
+ /* slider track */
+ input[type="range"]::-webkit-slider-runnable-track {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    height: 0.6rem;  
+ }
+ 
+ /* slider thumb */
+ input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -5px;  /* Centers thumb on the track */
+ 
+    /*custom styles*/
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 100%;
+    height: 1rem;
+    width: 1rem;
+ }
