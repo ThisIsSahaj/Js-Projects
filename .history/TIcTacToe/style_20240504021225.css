@@ -1,0 +1,281 @@
+/* COLOR PALETTE */
+
+/* 
+
+yellow    #FFC700
+red       #FF8477
+green     #2DD998
+blue      #699CF8
+purple    #C8B8FF
+orange    #EF4F1E
+
+*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'whyte', Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #FFC700;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* CURSORS */
+html{
+    cursor: url('/assets/images/PointerBody.png'), auto;
+}
+
+ button {
+    cursor: url('/assets/images/PointerHover.png'), auto;
+}
+
+.notch p, h3, input {
+    cursor: url('/assets/images/PointerText.png'), auto;
+
+}
+
+
+
+
+
+/* PHONE UI */
+.phoneUi{
+    border: 4px solid black;
+    width: 580px;
+    height: 80%;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.notch{
+    width: 100%;
+    height: 10%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    gap: 8px;
+}
+
+.notch p {
+    color: grey;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+/* SCREEN */
+.screen{
+    width: 90%;
+    height: 80%;
+    padding: 0px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #C8B8FF;
+    border: 4px solid black;
+    color: black;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.screenHeader {
+    /* border: 2px solid green; */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+}
+
+
+.greenBars{
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+}
+   
+.greenBars span {
+    border-radius: 12px;
+    border: 3px solid black;
+    width: 50%; 
+    height: 22px;
+ }
+ 
+.circleDiv {
+    display: flex; 
+    justify-content: space-around; 
+    width: 100px;
+}
+
+.circleDiv span {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 12px;
+    border: 3px solid black;
+}
+
+
+
+
+
+/* INPUT FIELD */
+
+.inputDiv{
+    /* border: 2px solid green; */
+    height: 14%;
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #699CF8;
+    border: 4px solid black;
+}
+::placeholder {
+    color: white;
+    opacity: 0.4; 
+  }
+  
+
+
+
+
+/* MAIN CONTENT */
+.content{
+    /* border: 2px solid green; */
+    width: 100%;
+    overflow: auto;
+    height: 66%;
+    padding: 0px 10px;    
+}
+
+.gameBox{
+    width: 100%;
+    height: 100%;
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cell{
+    width: 30%;
+    height: 30%;
+    border: 2px solid black;
+
+}
+
+
+
+
+/* SCROLLBAR */
+.scrollbar::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+/* CLASSES HANDLED BY JS */
+
+.error{
+    animation: shake 0.1s linear 4;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+/* RESPONSIVE  */
+
+
+@media (max-width: 648px)
+{
+    .phoneUi{
+        width: 440px;
+    }
+    
+}
+
+
+@media (max-width: 475px)
+{   
+    .screen{
+        padding: 0px 10px;
+    }
+    .phoneUi{
+        width: 340px;
+    }
+    .notch{
+        font-size: 18px;
+    }
+    .notch p {
+        color: grey;
+        font-size: 10px;
+    }
+
+}
+
+@media (max-height: 500px)
+{
+    .notch h3 {
+        font-size: 14px;
+    }
+}
+
