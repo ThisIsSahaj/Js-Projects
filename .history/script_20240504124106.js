@@ -46,7 +46,7 @@ const cards = [
         image: 'assets/images/tictactoe.png',
         title: 'Tic Tac Toe',
         description: 'An easy Tic Tac Toe game',
-        projLink: 'TicTacToe/index.html',
+        projLink: 'TIcTacToe/index.html',
         codeLink: 'https://github.com/ThisIsSahaj/Js-Projects/tree/main/TicTacToe',
     },
     {
