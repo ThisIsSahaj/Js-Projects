@@ -103,6 +103,7 @@ const restartGame = () => {
         cell.innerText = "";
         count = 0;
         display.innerText = "X's turn"
+
         startGame();
         
         
