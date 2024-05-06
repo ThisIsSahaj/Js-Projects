@@ -10,8 +10,8 @@ body {
     user-select: none;
     /* overflow: hidden; */
   }
-  ::-webkit-scrollbar {
-   display: none;
+  body::-webkit-scrollbar {
+   /* display: none; */
 }
   
   code {

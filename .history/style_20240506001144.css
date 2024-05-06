@@ -8,9 +8,9 @@ body {
     background-color: rgb(22, 20, 24);
     color: #eee;
     user-select: none;
-    /* overflow: hidden; */
   }
-  ::-webkit-scrollbar {
+
+  .scrollbar::-webkit-scrollbar {
    display: none;
 }
   

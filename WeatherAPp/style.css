@@ -175,36 +175,6 @@ input{
     padding: 0px 10px;    
 }
 
-.gameBox{
-    width: 100%;
-    height: 100%;
-    /* border: 2px solid green; */
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-
-}
-.cell{
-    width: 30%;
-    height: 30%;
-    border: 4px solid black;
-    background-color: white;
-    border-radius: 10px;
-    font-size: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.xTurn{
-    background-color: red;
-}
-.oTurn{
-    background-color: green;
-}
 
 
 

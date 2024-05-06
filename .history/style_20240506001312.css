@@ -10,7 +10,7 @@ body {
     user-select: none;
     /* overflow: hidden; */
   }
-  ::-webkit-scrollbar {
+  body::-webkit-scrollbar {
    display: none;
 }
   
