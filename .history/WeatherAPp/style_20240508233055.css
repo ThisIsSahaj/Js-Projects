@@ -340,6 +340,16 @@ input{
         color: grey;
         font-size: 10px;
     }
+    .city h2{
+        font-size: 46px;
+        font-weight: 500;
+     }
+     .city h3{
+         font-size: 20px;
+     }
+     .city p {
+         font-size: 18px;
+     }
 
 }
 

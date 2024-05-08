@@ -307,20 +307,15 @@ input{
         width: 440px;
     }
     .city h2{
-        font-size: 46px;
+        font-size: 50px;
         font-weight: 500;
      }
      .city h3{
-         font-size: 20px;
+         font-size: 30px;
      }
      .city p {
-         font-size: 18px;
+         font-size: 22px;
      }
-     #image{
-        width: 40%;
-        height: 70%;
-        margin-top: 8px;
-    }
     
 }
 

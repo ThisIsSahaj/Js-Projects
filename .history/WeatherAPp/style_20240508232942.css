@@ -306,6 +306,9 @@ input{
     .phoneUi{
         width: 440px;
     }
+    .city{
+        gap: 4px;
+    }
     .city h2{
         font-size: 46px;
         font-weight: 500;
@@ -316,11 +319,6 @@ input{
      .city p {
          font-size: 18px;
      }
-     #image{
-        width: 40%;
-        height: 70%;
-        margin-top: 8px;
-    }
     
 }
 
